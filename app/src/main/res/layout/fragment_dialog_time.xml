@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="layout.Dialog_EditItem"
+    tools:context="layout.Dialog_SelectTime"
     android:weightSum="1"
     >
 
@@ -10,18 +10,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="103dp"
-        android:layout_alignLeft="@+id/datePicker"
-        android:layout_alignStart="@+id/datePicker"
-        android:layout_alignRight="@+id/datePicker"
-        android:layout_alignEnd="@+id/datePicker" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:headerBackground="?attr/actionModeSplitBackground" />
 
-    <DatePicker
+    <Button
+        android:text="@android:string/no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/datePicker"
+        android:id="@+id/btnCancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignBaseline="@+id/btnOk"
+        android:layout_alignBottom="@+id/btnOk"
+        android:layout_alignRight="@+id/btnOk"
+        android:layout_alignEnd="@+id/btnOk"
+        android:layout_marginRight="64dp"
+        android:layout_marginEnd="64dp" />
+
+    <Button
+        android:text="@android:string/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:layout_alignBottom="@+id/timePicker"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/btnOk"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/timePicker"
+        android:layout_alignEnd="@+id/timePicker"
+        />
 </RelativeLayout>

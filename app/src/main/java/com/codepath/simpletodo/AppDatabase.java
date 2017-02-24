@@ -1,8 +1,6 @@
 package com.codepath.simpletodo;
+import com.raizlabs.android.dbflow.annotation.Database;
 
-/**
- * Created by alex_ on 2/21/2017.
- */
-
+@Database(name = "todolist_db", version = 2)
 public class AppDatabase {
 }
