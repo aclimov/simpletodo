@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Dialog_EditItem"
+    android:weightSum="1"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="18dp"
+        android:id="@+id/etDescription"
+        android:layout_below="@+id/etName"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/etName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
